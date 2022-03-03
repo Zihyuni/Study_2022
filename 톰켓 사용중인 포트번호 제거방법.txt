@@ -1,0 +1,7 @@
+1.netstat -aon
+검색 후 
+
+없앨 포트 번호 맞춰서 PID확인
+
+2.taskkill /f /pid 번호
+

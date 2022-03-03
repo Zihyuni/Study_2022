@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
+
+    <context:component-scan base-package="controller" />
+
+    <!--base-package에 적혀있는 경로에있는 모든 클래스나 객체를 탐색하겠다는 것임.-->
+    <!--클라이언트로부터 어떤 요청이 오면 서블릿 컨테이너가 요청을 받는데
+     제일 앞에서 서버로 들어오는 요청을 처리하는 것 :: 프론트 컨트롤러
+     이를 바로 dispatcher-servlet이라고 한다.-->
+
+    <!-- 디스패처 서블릿 순서
+    1.클라이언트가 url로 접근하여 정보를 요청한다.
+    2.디스패처 서블릿에서 핸들러매핑을 하여 해당요청을 매핑한 컨트롤러가 있는지 검색한다.
+    3.핸들러매핑을 통해 컨트롤러에 처리를 요청한다.
+    4.클라이언트의 요청을 처리한 후 출력할 view으 이름을 리턴한다.
+    5.컨트롤러에서 보내온 view이름대로 view를 검색한다.
+    6.view를 검색한 후에 viewResolver를 통하여 처리결과를 view에 송신한다.
+    7.처리결과가 포함된 view를 dispatcherservlet으로 다시 보낸다.
+    8.최종적으로 dispatcertServlet이 클라이언트에게 결과를 출력해준다.
+
+    클라이언트가 url로 접근하면 두가지로 나눈다.
+    1. /apps의 url로 접근하면 dispatcher servlert이 담당.
+    2. /resources의 url로 접근하면 dispatcher servlet이 컨트롤 할 수 없다.(담당아님)
+
+
+    -->
+
+</beans>
