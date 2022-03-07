@@ -2,6 +2,11 @@ package org.zerock.config;
 
 import com.zaxxer.hikari.HikariConfig;
 import com.zaxxer.hikari.HikariDataSource;
+import org.apache.ibatis.annotations.Mapper;
+import org.apache.ibatis.session.SqlSession;
+import org.apache.ibatis.session.SqlSessionFactory;
+import org.mybatis.spring.SqlSessionFactoryBean;
+import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
@@ -12,7 +17,7 @@ import javax.sql.DataSource;
 //root-context.xml을 대신하는 것임.
 @ComponentScan(basePackages = {"org.zerock.sample"})
 //basePackages에서 오타내지말것!!!!!
-
+@MapperScan(basePackages = {"org.zerock.mapper"})
 public class RootConfig {
 
     @Bean
@@ -33,6 +38,14 @@ public class RootConfig {
         //DB에 연결할 BEAN을 등록하였습니다!!!!
 
         return dataSource;
+    }
+
+    @Bean
+    public SqlSessionFactory sqlSessionFactory() throws Exception {
+        SqlSessionFactoryBean sqlSessionFactory = new SqlSessionFactoryBean();
+        sqlSessionFactory.setDataSource(dataSource());
+        return (SqlSessionFactory) sqlSessionFactory.getObject();
+
     }
 
 }
