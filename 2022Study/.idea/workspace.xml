@@ -9,7 +9,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b729c7de-6acf-4b6d-a34d-438479ccc31c" name="Changes" comment="" />
+    <list default="true" id="b729c7de-6acf-4b6d-a34d-438479ccc31c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../ex01/src/main/webapp/WEB-INF/applicationContext.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ex01/src/main/webapp/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/zerock/config/RootConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/zerock/config/RootConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/log4j.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/log4j.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/log4j.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/log4j.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/zerock/config/RootConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/zerock/config/RootConfig.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,9 +27,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="spring-beans.schema" />
         <option value="Class" />
+        <option value="Interface" />
         <option value="JUnit4 Test Class" />
+        <option value="spring-beans.schema" />
       </list>
     </option>
   </component>
@@ -34,6 +44,9 @@
       <filtered-out-file-type name="TAG" />
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/main/java/org/zerock/mapper/TimeMapper.java" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
@@ -52,21 +65,23 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="oracle" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="ToolWindowRun.ShowToolbar" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="create.test.in.the.same.root" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ex01" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="project.structure.last.edited" value="Facets" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.20344828" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="preferences.externalResources" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
@@ -75,7 +90,16 @@
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\jihyun\Documents\Study_2022\2022Study\src\main\resources\org\zerock\mapper" />
+      <recent name="C:\Users\jihyun\Documents\Study_2022\2022Study\src\main\resources\org.zerock.mapper" />
+      <recent name="C:\Users\jihyun\Documents\Study_2022\2022Study\src\main\resources\mapper" />
+      <recent name="C:\Users\jihyun\Documents\Study_2022\2022Study\src\main\resources\org.zerock\mapper" />
+      <recent name="C:\Users\jihyun\Documents\Study_2022\2022Study\src\main\java\org\zerock\mapper" />
+    </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="org.zerock.mapper" />
+      <recent name="org.zerock.persistence" />
       <recent name="org.zerock.sample" />
     </key>
   </component>
@@ -86,56 +110,50 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.591">
-    <configuration name="HotelTests.testExist" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.TimeMapperTests">
+    <configuration name="DataSourceTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="2022Study" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.zerock.sample.*" />
+          <option name="PATTERN" value="org.zerock.persistence.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="org.zerock.sample" />
-      <option name="MAIN_CLASS_NAME" value="org.zerock.sample.HotelTests" />
-      <option name="METHOD_NAME" value="testExist" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="S" type="JUnit" factoryName="JUnit" temporary="true">
-      <module name="2022Study" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.zerock.sample.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="ALTERNATIVE_JRE_PATH" value="11" />
-      <option name="PACKAGE_NAME" value="org.zerock.sample" />
-      <option name="MAIN_CLASS_NAME" value="org.zerock.sample.SampleTests" />
-      <option name="METHOD_NAME" value="testExist" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SampleTests" type="JUnit" factoryName="JUnit" activateToolWindowBeforeRun="false" temporary="true" nameIsGenerated="true">
-      <module name="2022Study" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.zerock.sample.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.zerock.sample" />
-      <option name="MAIN_CLASS_NAME" value="org.zerock.sample.SampleTests" />
-      <option name="METHOD_NAME" value="testExist" />
+      <option name="PACKAGE_NAME" value="org.zerock.persistence" />
+      <option name="MAIN_CLASS_NAME" value="org.zerock.persistence.DataSourceTests" />
       <option name="TEST_OBJECT" value="class" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="wholeProject" />
-      </option>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DataSourceTests.testConnection" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="2022Study" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.zerock.persistence.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.zerock.persistence" />
+      <option name="MAIN_CLASS_NAME" value="org.zerock.persistence.DataSourceTests" />
+      <option name="METHOD_NAME" value="testConnection" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DataSourceTests.testMyBatis" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="2022Study" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.zerock.persistence.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.zerock.persistence" />
+      <option name="MAIN_CLASS_NAME" value="org.zerock.persistence.DataSourceTests" />
+      <option name="METHOD_NAME" value="testMyBatis" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -168,6 +186,37 @@
       <option name="MAIN_CLASS_NAME" value="org.zerock.sample.SampleTests" />
       <option name="METHOD_NAME" value="testExist" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TimeMapperTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="2022Study" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.zerock.mapper.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.zerock.mapper" />
+      <option name="MAIN_CLASS_NAME" value="org.zerock.mapper.TimeMapperTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TimeMapperTests.testGetTime2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="2022Study" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.zerock.mapper.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.zerock.mapper" />
+      <option name="MAIN_CLASS_NAME" value="org.zerock.mapper.TimeMapperTests" />
+      <option name="METHOD_NAME" value="testGetTime2" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -264,14 +313,20 @@
     </configuration>
     <list>
       <item itemvalue="JUnit.SampleTests" />
-      <item itemvalue="JUnit.S" />
-      <item itemvalue="JUnit.HotelTests.testExist" />
-      <item itemvalue="Tomcat Server.Tomcat 9.0.591" />
+      <item itemvalue="JUnit.DataSourceTests" />
+      <item itemvalue="JUnit.DataSourceTests.testConnection" />
+      <item itemvalue="JUnit.DataSourceTests.testMyBatis" />
+      <item itemvalue="JUnit.TimeMapperTests" />
+      <item itemvalue="JUnit.TimeMapperTests.testGetTime2" />
+      <item itemvalue="Tomcat 서버.Tomcat 9.0.591" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.HotelTests.testExist" />
-        <item itemvalue="JUnit.S" />
+        <item itemvalue="JUnit.TimeMapperTests" />
+        <item itemvalue="JUnit.TimeMapperTests.testGetTime2" />
+        <item itemvalue="JUnit.DataSourceTests.testMyBatis" />
+        <item itemvalue="JUnit.DataSourceTests" />
+        <item itemvalue="JUnit.DataSourceTests.testConnection" />
       </list>
     </recent_temporary>
   </component>
@@ -287,6 +342,19 @@
       <workItem from="1646310101982" duration="262000" />
       <workItem from="1646365861862" duration="6365000" />
       <workItem from="1646373905617" duration="3244000" />
+      <workItem from="1646561958851" duration="893000" />
+      <workItem from="1646563053212" duration="5651000" />
+      <workItem from="1646611798424" duration="6821000" />
+      <workItem from="1646626088240" duration="2632000" />
+      <workItem from="1646628763611" duration="527000" />
+      <workItem from="1646629395402" duration="722000" />
+      <workItem from="1646630141525" duration="568000" />
+      <workItem from="1646630854620" duration="134000" />
+      <workItem from="1646631098976" duration="66000" />
+      <workItem from="1646631448531" duration="17000" />
+      <workItem from="1646632319391" duration="1248000" />
+      <workItem from="1646638929408" duration="19000" />
+      <workItem from="1646653968785" duration="14000" />
     </task>
     <servers />
   </component>
@@ -303,6 +371,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Study01Prj$SampleTests.ic" NAME="SampleTests Coverage Results" MODIFIED="1646373467275" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
