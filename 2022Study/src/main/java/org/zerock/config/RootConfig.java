@@ -24,9 +24,13 @@ public class RootConfig {
     //bean등록을 해줘야한다.. 안하면 test클래스에서 rootconfig클래스에 datasource메소드를 못읽음.
     public DataSource dataSource(){
         HikariConfig hikariConfig = new HikariConfig();
-        hikariConfig.setDriverClassName("oracle.jdbc.driver.OracleDriver");
+      //  hikariConfig.setDriverClassName("oracle.jdbc.driver.OracleDriver");
         //오라클 드라이버
-        hikariConfig.setJdbcUrl("jdbc:oracle:thin:@localhost:1521:XE");
+       // hikariConfig.setJdbcUrl("jdbc:oracle:thin:@localhost:1521:XE");
+        hikariConfig.setDriverClassName("net.sf.log4jdbc.sql.jdbcapi.DriverSpy");
+        //log4J드라이버 등록(???)
+        hikariConfig.setJdbcUrl("jdbc:log4jdbc:oracle:thin:@localhost:1521:XE");
+
         //jdbc Url
         hikariConfig.setUsername("book_ex");
         //jdbc연결할 계정 ID

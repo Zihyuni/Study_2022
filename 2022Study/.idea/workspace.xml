@@ -9,7 +9,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b729c7de-6acf-4b6d-a34d-438479ccc31c" name="Changes" comment="" />
+    <list default="true" id="b729c7de-6acf-4b6d-a34d-438479ccc31c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../ex01/src/main/webapp/WEB-INF/applicationContext.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ex01/src/main/webapp/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/zerock/config/RootConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/zerock/config/RootConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/log4j.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/log4j.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/log4j.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/log4j.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/zerock/config/RootConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/zerock/config/RootConfig.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -64,7 +73,7 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="create.test.in.the.same.root" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../../dev/sqldeveloper-21.4.2.018.1706-x64/sqldeveloper/jdbc/lib/ojdbc8.jar" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ex01" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -101,7 +110,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.TimeMapperTests.testGetTime2">
+  <component name="RunManager" selected="JUnit.TimeMapperTests">
     <configuration name="DataSourceTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="2022Study" />
       <extension name="coverage">
@@ -309,12 +318,12 @@
       <item itemvalue="JUnit.DataSourceTests.testMyBatis" />
       <item itemvalue="JUnit.TimeMapperTests" />
       <item itemvalue="JUnit.TimeMapperTests.testGetTime2" />
-      <item itemvalue="Tomcat Server.Tomcat 9.0.591" />
+      <item itemvalue="Tomcat 서버.Tomcat 9.0.591" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.TimeMapperTests.testGetTime2" />
         <item itemvalue="JUnit.TimeMapperTests" />
+        <item itemvalue="JUnit.TimeMapperTests.testGetTime2" />
         <item itemvalue="JUnit.DataSourceTests.testMyBatis" />
         <item itemvalue="JUnit.DataSourceTests" />
         <item itemvalue="JUnit.DataSourceTests.testConnection" />
@@ -338,6 +347,14 @@
       <workItem from="1646611798424" duration="6821000" />
       <workItem from="1646626088240" duration="2632000" />
       <workItem from="1646628763611" duration="527000" />
+      <workItem from="1646629395402" duration="722000" />
+      <workItem from="1646630141525" duration="568000" />
+      <workItem from="1646630854620" duration="134000" />
+      <workItem from="1646631098976" duration="66000" />
+      <workItem from="1646631448531" duration="17000" />
+      <workItem from="1646632319391" duration="1248000" />
+      <workItem from="1646638929408" duration="19000" />
+      <workItem from="1646653968785" duration="14000" />
     </task>
     <servers />
   </component>
@@ -354,17 +371,6 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/org/zerock/mapper/TimeMapperTests.java</url>
-          <line>15</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
