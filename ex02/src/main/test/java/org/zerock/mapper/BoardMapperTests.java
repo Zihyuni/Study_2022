@@ -16,7 +16,7 @@ import org.zerock.mapper.BoardMapper;
 @Log4j
 public class BoardMapperTests {
 
-        @Setter(onMethod_ = @Autowired)
+    @Setter(onMethod_ = @Autowired)
         private BoardMapper mapper;
 
 
