@@ -13,10 +13,13 @@ import javax.sql.DataSource;
 
 @Configuration
 @MapperScan(basePackages = {"org.zerock.mapper"})
+//매퍼 경로는 리소스의 xml경로랑 똑같이 할것 !!!
 public class RootConfig {
+
 
     @Bean
     public DataSource dataSource(){
+        System.out.println("빈설정이 되었을까요??");
         HikariConfig hikariConfig = new HikariConfig();
         //hikariConfig.setDriverClassName("oracle.jdbc.driver.OracleDriver");
         //오라클 드라이버
@@ -34,6 +37,8 @@ public class RootConfig {
         HikariDataSource dataSource = new HikariDataSource(hikariConfig);
 
         //DB에 연결할 BEAN을 등록하였습니다!!!!
+
+
 
         return dataSource;
     }
