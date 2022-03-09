@@ -10,6 +10,9 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.zerock.domain.BoardVO;
 import org.zerock.mapper.BoardMapper;
+import org.zerock.service.BoardService;
+
+import static org.junit.Assert.assertNotNull;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(classes = {org.zerock.config.RootConfig.class})
@@ -19,56 +22,59 @@ public class BoardMapperTests {
     @Setter(onMethod_ = @Autowired)
     private BoardMapper mapper;
 
-////
-////        @Test
-////        public void testGetList(){
-////            mapper.getList().forEach(board -> log.info(board));
-////         }
-//
-//
-//    @Test
-//    public void testInsert() {
-//        BoardVO board = new BoardVO();
-//        board.setTitle("새로작성하는 글입니다~~!! ");
-//        board.setContent("새로 작성하는 내용");
-//        board.setWriter("newbie!!!");
-//
-//        mapper.insert(board);
-//
-//        log.info(board);
-//    }
-//
-//    @Test
-//    public void testInsertSelectKey() {
-//        BoardVO board = new BoardVO();
-//        board.setTitle("새로작성하는 select key~~~");
-//        board.setContent("select key의 내용");
-//        board.setWriter("뉴비!!!");
-//
-//        mapper.insertSelectKey(board);
-//
-//        log.info(board);
-//    }
-//
-//
-//    @Test
-//    public void testRead() {
-//
-//        BoardVO board = mapper.read(3L);
-//        //long 타입이라 숫자뒤에 L을 넣나보다.
-//
-//        log.info(board);
-//    }
 
+    @Setter(onMethod_ = @Autowired)
+    private BoardService service;
 //
-//    @Test
-//    public void testDelete(){
-//
-//        log.info("DELETE COUNT::::"+mapper.delete(2L));
-//        //bno에 숫자는 뭘까.. 이건 내일 알아보자!!!꼭 !!!
-//}
+        @Test
+        public void testGetList(){
+            mapper.getList().forEach(board -> log.info(board));
+         }
+
 
     @Test
+    public void testInsert() {
+        BoardVO board = new BoardVO();
+        board.setTitle("글입니다아아아");
+        board.setContent("새로 작성하는 내용");
+        board.setWriter("newbie!!!");
+
+        mapper.insert(board);
+
+        log.info(board);
+    }
+
+    @Test
+    public void testInsertSelectKey() {
+        BoardVO board = new BoardVO();
+        board.setTitle("새로작성하는 select key~~~");
+        board.setContent("select key의 내용");
+        board.setWriter("뉴비!!!");
+
+        mapper.insertSelectKey(board);
+
+        log.info(board);
+    }
+
+
+    @Test
+    public void testRead() {
+
+        BoardVO board = mapper.read(3L);
+        //long 타입이라 숫자뒤에 L을 넣나보다.
+
+        log.info(board);
+    }
+
+
+    @Test
+    public void testDelete(){
+
+        log.info("DELETE COUNT::::"+mapper.delete(2L));
+        //bno에 숫자는 뭘까.. 이건 내일 알아보자!!!꼭 !!!
+}
+
+    @Test//여기는 업데이트 하는 구문이다!!!
     public void testUpdate(){
 
         BoardVO board = new BoardVO();
@@ -81,5 +87,48 @@ public class BoardMapperTests {
         int count = mapper.update(board);
         log.info("UPDATE COUNT:::"+count);
     }
-}
 
+    @Test
+    public void testExist(){
+        log.info("service!!!!!!!!!"+service);
+        assertNotNull(service);
+    }
+
+    @Test
+    public void testRegister(){
+        BoardVO board = new BoardVO();
+        board.setTitle("글 새로작성함!!");
+        board.setContent("내용 새로 작성함!!");
+        board.setWriter("뉴비입니다~~");
+
+        service.register(board);
+
+        log.info("생성된 게시물 번호입니다"+board.getBno());
+    }
+
+    @Test
+    //이건 테이블 형태로해서 !!! get안에 넣은 숫자의 데이터만 조회할수있음!!
+    public void testGet(){
+        log.info(service.get(9L));
+    }
+//
+//    @Test
+//    public void testDelete(){
+//        log.info("REMOVE RESULT :::: 삭제 한 행은?"+service.remove(9L));
+//    }
+//
+//    @Test
+//    public void testUpdate(){
+//        BoardVO board = service.get(13L);
+//
+//        if(board == null){
+//            return;
+//                    //보드가.. 없으면은 .. 실행하지 않고 그냥 반환한다!!
+//        }
+//        board.setTitle("제목 수정했습니다!!!!!");
+//        log.info("MODIFY RESULT  수정한 값입니다:::!!"+service.modify(board));
+//    }
+//
+}
+//
+//
