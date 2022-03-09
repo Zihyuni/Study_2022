@@ -10,14 +10,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b729c7de-6acf-4b6d-a34d-438479ccc31c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../ex01/src/main/webapp/WEB-INF/applicationContext.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ex01/src/main/webapp/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ex02/src/main/webapp/WEB-INF/applicationContext.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ex02/src/main/webapp/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/zerock/config/RootConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/zerock/config/RootConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/log4j.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/log4j.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/log4j.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/log4j.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/zerock/config/RootConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/zerock/config/RootConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JAVA-STUDY/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../JAVA-STUDY/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ex01/src/main/java/org/zerock/config/WebConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ex01/src/main/java/org/zerock/config/WebConfig.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,7 +70,7 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="create.test.in.the.same.root" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ex01" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ex02" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -318,7 +315,7 @@
       <item itemvalue="JUnit.DataSourceTests.testMyBatis" />
       <item itemvalue="JUnit.TimeMapperTests" />
       <item itemvalue="JUnit.TimeMapperTests.testGetTime2" />
-      <item itemvalue="Tomcat 서버.Tomcat 9.0.591" />
+      <item itemvalue="Tomcat Server.Tomcat 9.0.591" />
     </list>
     <recent_temporary>
       <list>
@@ -355,6 +352,14 @@
       <workItem from="1646632319391" duration="1248000" />
       <workItem from="1646638929408" duration="19000" />
       <workItem from="1646653968785" duration="14000" />
+      <workItem from="1646802678066" duration="10000" />
+      <workItem from="1646803607914" duration="11000" />
+      <workItem from="1646803823202" duration="21000" />
+      <workItem from="1646803895492" duration="5000" />
+      <workItem from="1646803932111" duration="21000" />
+      <workItem from="1646804558146" duration="12000" />
+      <workItem from="1646805109794" duration="38000" />
+      <workItem from="1646806173501" duration="11000" />
     </task>
     <servers />
   </component>
