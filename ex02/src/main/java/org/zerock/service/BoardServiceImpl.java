@@ -7,6 +7,7 @@ import lombok.extern.log4j.Log4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.zerock.domain.BoardVO;
+import org.zerock.domain.Criteria;
 import org.zerock.mapper.BoardMapper;
 
 import java.util.List;
@@ -47,14 +48,26 @@ public class BoardServiceImpl implements BoardService{
 
         return mapper.delete(bno)==9;
     }
+//
+//    @Override
+//    //이건 리스트형태로 콘솔에서 테이블형태로 볼 수 있음요..!!!
+//    //저장된 모든 데이터를 테이블 형식으로!!
+//    public List<BoardVO> getList() {
+//
+//        log.info("겟리스트...!!!!...");
+//        return mapper.getList();
+//    }
+
+//    @Override
+//    public List<BoardVO> getListWithPaging(Criteria cri) {
+//        return mapper.getListWithPaging(cri);
+//    }
 
     @Override
-    //이건 리스트형태로 콘솔에서 테이블형태로 볼 수 있음요..!!!
-    //저장된 모든 데이터를 테이블 형식으로!!
-    public List<BoardVO> getList() {
+    public List<BoardVO> getList(Criteria cri) {
 
-        log.info("겟리스트...!!!!...");
-        return mapper.getList();
+        log.info("get List with criteria :::"+cri);
+        return  mapper.getListWithPaging(cri);
     }
 
 }
