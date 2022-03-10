@@ -62,7 +62,7 @@
         <div class="panel panel-default">
             <div class="panel-heading">Board Register</div>
             <!-- /.panel-heading -->
-            <div class="panel-body">
+            <div class="panel-body"><input type="hidden" id='bno' name="bno" value="<c:out value="${board.bno}"/>">
                 <form role="form" action="/board/modify" method="post">
                     <div class="form-group">
                         <label>Bno</label> <input class="form-control" name='bno'
@@ -75,7 +75,7 @@
                     <div class="form-group">
                         <label>Text area</label>
                         <textarea class="form-control" rows="3" name='content'>
-							<c:out value="${board.content }" />
+							<c:out value="${board.content}" />
 						</textarea>
                     </div>
                     <div class="form-group">
@@ -98,6 +98,8 @@
                     <button type="submit" data-oper='list' class="btn btn-info">List</button>
                 </form>
 
+                <input type="hidden" name="pageNum" value="<c:out value="${cri.pageNum}"/>">
+                <input type="hidden" name="amount" value="<c:out value="${cri.amount}"/>">
             </div>
             <!-- /.panel-body -->
         </div>
@@ -120,8 +122,8 @@
                     formObj.attr("action", "/board/remove");
                 }else if(operation === 'list'){
                     //move to list
-                    self.location = "/board/list";
-                    return;
+                    formObj.attr("action","/board/list").attr("method","get");
+                    formObj.empty();
                 }
                 formObj.submit();
             });

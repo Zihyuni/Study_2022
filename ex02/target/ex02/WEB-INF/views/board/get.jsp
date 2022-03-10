@@ -101,7 +101,27 @@
             <!-- end panel-->
         </div>
         <!--/.row-->
-
+        <form id='openForm' action="/board/modify" method="get">
+            <input type="hidden" id='bno' name="bno" value="<c:out value="${board.bno}"/>">
+            <input type="hidden" id='pageNum' name="pageNum" value="<c:out value="${cri.pageNum}"/>">
+            <input type="hidden" id='amount' name="amount" value="<c:out value="${cri.amount}"/>">
+        </form>
     <%@include file="../includes/footer.jsp"%>
+    <script type="text/javascript">
+        $(document).ready(function (){
+
+            var openForm = $("#operForm");
+
+            $("button[data-oper='modify']").on("click",function (e){
+                operForm.attr("action","/board/modify").submit();
+            });
+
+            $("button[data-oper='list']").on("click",function (e){
+                openForm.find(#bno).remove();
+                openForm.attr("action","/board/list")
+                openForm.submit();
+            })
+        })
+    </script>
 </body>
 </html>

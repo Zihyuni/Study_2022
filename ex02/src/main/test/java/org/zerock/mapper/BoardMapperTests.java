@@ -2,15 +2,16 @@ package org.zerock.mapper;
 
 import lombok.Setter;
 import lombok.extern.log4j.Log4j;
-import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.zerock.domain.BoardVO;
-import org.zerock.mapper.BoardMapper;
+import org.zerock.domain.Criteria;
 import org.zerock.service.BoardService;
+
+import java.util.List;
 
 import static org.junit.Assert.assertNotNull;
 
@@ -26,8 +27,8 @@ public class BoardMapperTests {
     @Setter(onMethod_ = @Autowired)
     private BoardService service;
 //
-        @Test
-        public void testGetList(){
+        //@Test
+       public void testGetList(){
             mapper.getList().forEach(board -> log.info(board));
          }
 
@@ -129,6 +130,18 @@ public class BoardMapperTests {
 //        log.info("MODIFY RESULT  수정한 값입니다:::!!"+service.modify(board));
 //    }
 //
+    @Test
+    public void testPaging(){
+        Criteria cri = new Criteria();
+        //10개씩 3페이지를 넣겠습니다.
+        cri.setPageNum(3);
+        //몇페이지 만들건지 적는거임
+        cri.setAmount(10);
+        //여기는 한페이지당 게시물 몇개들어갈건지 적는거임
+
+        List<BoardVO> list = mapper.getListWithPaging(cri);
+        list.forEach(board->log.info(board.getBno()));
+    }
 }
 //
 //

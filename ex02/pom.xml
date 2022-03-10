@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>org.example</groupId>
@@ -18,7 +18,7 @@
     <maven.compiler.source>1.7</maven.compiler.source>
     <maven.compiler.target>1.7</maven.compiler.target>
 
-    <java-version>1.8</java-version>
+    <java-version>11</java-version>
     <org.springframework-version>5.2.3.RELEASE</org.springframework-version>
     <!--MVC만들떄 계속 오류낫던 이유 :: 스프링 MVC만들떄 버전 5.2.3으로 해놓고 이 버전은 5.0.7로작업해서 계속 오류났다-->
     <org.aspectj-version>1.6.10</org.aspectj-version>
@@ -93,13 +93,13 @@
       <version>1.7.25</version>
     </dependency>
 
-  <!--로그찍을떄 꼭.. slf4j도 추가해서 찍자..!!-->
+    <!--로그찍을떄 꼭.. slf4j도 추가해서 찍자..!!-->
 
     <!-- https://mvnrepository.com/artifact/junit/junit -->
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
-      <version>4.12</version>
+      <version>4.13.1</version>
       <scope>test</scope>
     </dependency>
 

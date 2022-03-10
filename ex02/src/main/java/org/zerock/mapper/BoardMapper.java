@@ -2,6 +2,7 @@ package org.zerock.mapper;
 
 import org.apache.ibatis.annotations.Select;
 import org.zerock.domain.BoardVO;
+import org.zerock.domain.Criteria;
 
 import java.util.List;
 
@@ -11,6 +12,8 @@ public interface BoardMapper {
     //매퍼 xml에 작성해서 주석처리하는거 같음!!
     public List<BoardVO> getList();
     //리시트 안에는 boardvo만 들어올수있음!!!!!4
+
+    public List<BoardVO> getListWithPaging(Criteria cri);
 
     public void insert(BoardVO board);
 
