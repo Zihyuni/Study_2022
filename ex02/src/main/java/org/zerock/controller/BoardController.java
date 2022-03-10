@@ -47,8 +47,9 @@ public class BoardController {
         return "/board/register";
     }
 
-    @GetMapping("/get")
+    @GetMapping({"/get","/modify"})
     public void get(@RequestParam("bno")Long bno, Model model){
+
         log.info("겟입니다!!!!! 겟매핑에 get입니다");
         model.addAttribute("board",service.get(bno));
     }

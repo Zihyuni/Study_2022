@@ -50,6 +50,13 @@
 
 <body>
 
+        <div class="panel-heding">Board List Page
+        <button id='regBtn' type="button" class="btn btn-xs pull-right"
+        Register New Board !!!>
+        </button>
+        </div>
+
+
         <table class="table table-striped table-bordered table-hover">
         <thead>
             <tr>
@@ -65,7 +72,9 @@
 
             <tr>
                 <td><c:out value="${board.bno}"/> </td>
-                <td><c:out value="${board.title}"/></td>
+                <td><a href='/board/get?bno=<c:out value="${board.bno}"/>'>
+                    <c:out value="${board.title}"/></a></td>
+                    <!--title에 a태그를 걸어서 해당하는 게시물 번호로 넘어가게한다-->
                 <td><c:out value="${board.writer}"/> </td>
                 <td><fmt:formatDate value="${board.regdate}" pattern="yyyy-MM-DD"/> </td>
                 <td><fmt:formatDate value="${board.updateDate}" pattern="yyyy-MM-dd" /></td>
@@ -81,11 +90,11 @@
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal"
-                                aria-hidden="true">&times;</button>
+                                aria-hidden="true">&times;&times;</button>
                         <h4 class="modal-title" id="myModalLabel">Modal title</h4>
                     </div>
 
-                    <div class="modal-body>처리가 완료되었습니다!!!"</div>
+                    <div class="modal-body>처리가 완료되었습니다!!!">
                     <div class="modal-footer">
                         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                         <button type="button" class="btn btn-primary">Save changes</button>
@@ -100,30 +109,28 @@
 
         <%@include file="../includes/footer.jsp"%>
 
+
+
+</body>
     <script type="text/javascript">
         $(document).ready(function (){
             var result = '<c:out value="${result}"/>';
-        });
-    </script>
-
-    <script type="text/javascript">
-        $(document).ready(function (){
-            var result = '<:out value="${result}"/>';
 
             checkModal(result);
 
             function checkModal(result){
                 if(result === ''){
                     return;
+                }if (parseInt(result)>0){
+                    $(".modal-body").html("게시물 " + parseInt(result)+"번이 등록되었음!!!");
                 }
-                if (parseInt(result)>0){
-                    $(".modal-body").html("게시글:::"+parseInt(result)+"번이 등록되었습니다.");
-                }
-
-                $("#myModal").modal("show");
+                $("myModal").modal("show");
             }
+            $("#regBtn").on("click", function (){
+                self.location = "/board/register";
+            });
         });
     </script>
-</body>
+
 
 </html>
