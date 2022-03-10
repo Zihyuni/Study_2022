@@ -23,7 +23,8 @@ public class BoardServiceImpl implements BoardService{
     @Override
     public void register(BoardVO board) {
             log.info("register.....레지스터"+board);
-             mapper.insertSelectKey(board);
+             mapper.insert(board);
+        System.out.println("데이터가 어떻게 들어올까요?? register"+board.toString());
     }
 
     @Override
@@ -53,7 +54,7 @@ public class BoardServiceImpl implements BoardService{
     public List<BoardVO> getList() {
 
         log.info("겟리스트...!!!!...");
-        return null;
+        return mapper.getList();
     }
 
 }
